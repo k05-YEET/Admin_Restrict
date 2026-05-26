@@ -16,3 +16,8 @@ Runtime ist gering. Kein Zusatzfile nötig.
 
 File: change_sudoers_10-2025.sh - Getestet auf Ubuntu 24.04 LTS in Oktober 2025
 File: change_sudoers_01-2026.sh - Getestet auf Ubuntu 24.04 LTS im Fe
+
+# Installing  
+curl -LO https://github.com/k05-YEET/Admin_Restrict/raw/refs/heads/main/change_sudoers_01-2026.sh && chmod +x change_sudoers_01-2026.sh  
+# Executing  
+./change_sudoers_01-2026.sh
