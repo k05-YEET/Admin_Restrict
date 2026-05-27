@@ -28,7 +28,7 @@ File: change_sudoers_05-2026.sh - Zuletzt getestet auf Ubuntu 24.04 LTS im Mai 2
 Bei Bedarf kann man den Username "cpsadmin" einfach austauschen um einen anderen User alles direkt zu erlauben.  
 
 # Installing  
-curl -LO https://github.com/k05-YEET/Admin_Restrict/raw/refs/heads/main/change_sudoers_05-2026.sh && chmod +x change_sudoers_01-2026.sh  
+curl -LO https://github.com/k05-YEET/Admin_Restrict/raw/refs/heads/main/change_sudoers_05-2026.sh && chmod +x change_sudoers_05-2026.sh  
 # Executing  
 ./change_sudoers_05-2026.sh  
 
