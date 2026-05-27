@@ -21,8 +21,8 @@ Das main-system File /etc/sudoers wird nicht angerührt.
 
 Runtime ist gering. Kein Zusatzfile nötig.
 
-File: change_sudoers_10-2025.sh - Getestet auf Ubuntu 24.04 LTS in Oktober 2025  
-File: change_sudoers_01-2026.sh - Getestet auf Ubuntu 24.04 LTS im Fe
+File: change_sudoers_10-2025.sh - Zuletzt getestet auf Ubuntu 24.04 LTS in Oktober 2025  
+File: change_sudoers_01-2026.sh - Zuletzt getestet auf Ubuntu 24.04 LTS im Februar 2026
 
 Bei Bedarf kann man den Username "cpsadmin" einfach austauschen um einen anderen User alles direkt zu erlauben.  
 
