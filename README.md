@@ -8,14 +8,23 @@ change_sudoers_XX-202X.sh bewirkt folgendes:
 3. Sperren der Root Shell (nicht vollständig, umgehbar in dem man eine andere Shell installiert) für normale sudoers (!cpsadmin)
 4. Sperren des User-MGMT per shell (blocked: useradd, adduser, deluser, userdel). Gruppen hinzufügen / entfernen ist erlaubt (weil keine Regel auf Gruppen basiert)
 
+change_sudoers_XX-202X.sh bewirkt *nicht*:  
+
+1.  Sperren anderer Shells die den Wechsel in die Sudo Shell ermöglichen würde (bash Befehle gesperrt)
+2.  Sperren anderer DEs in diese man wechseln könnte um Polkit und GNOME zu umgehen
+3.  Sperren der Bearbeitung für config Ordner bezogen auf einschränkende Files per neu installiertem Editor
+4.  ... 
+
 Jede Berarbeitung von Regeln unter /etc/sudoers.d/ wird mit visudo ausgeführt und bricht ab wenn ein Check negatives Feedback bekommt zur Sicherheit. Von jedem Ordner / File das verändert wird wird ein Backup vorab abgespeichert:  
 /etc/sudoers.d/99-custom-rules.bak.$(date +%s)  
 Das main-system File /etc/sudoers wird nicht angerührt.
 
 Runtime ist gering. Kein Zusatzfile nötig.
 
-File: change_sudoers_10-2025.sh - Getestet auf Ubuntu 24.04 LTS in Oktober 2025
+File: change_sudoers_10-2025.sh - Getestet auf Ubuntu 24.04 LTS in Oktober 2025  
 File: change_sudoers_01-2026.sh - Getestet auf Ubuntu 24.04 LTS im Fe
+
+Bei Bedarf kann man den Username "cpsadmin" einfach austauschen um einen anderen User alles direkt zu erlauben.  
 
 # Installing  
 curl -LO https://github.com/k05-YEET/Admin_Restrict/raw/refs/heads/main/change_sudoers_01-2026.sh && chmod +x change_sudoers_01-2026.sh  
