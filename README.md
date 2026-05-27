@@ -23,10 +23,15 @@ Runtime ist gering. Kein Zusatzfile nötig.
 
 File: change_sudoers_10-2025.sh - Zuletzt getestet auf Ubuntu 24.04 LTS in Oktober 2025  
 File: change_sudoers_01-2026.sh - Zuletzt getestet auf Ubuntu 24.04 LTS im Februar 2026
+File: change_sudoers_05-2026.sh - Zuletzt getestet auf Ubuntu 24.04 LTS im Mai 2026
 
 Bei Bedarf kann man den Username "cpsadmin" einfach austauschen um einen anderen User alles direkt zu erlauben.  
 
 # Installing  
-curl -LO https://github.com/k05-YEET/Admin_Restrict/raw/refs/heads/main/change_sudoers_01-2026.sh && chmod +x change_sudoers_01-2026.sh  
+curl -LO https://github.com/k05-YEET/Admin_Restrict/raw/refs/heads/main/change_sudoers_05-2026.sh && chmod +x change_sudoers_01-2026.sh  
 # Executing  
-./change_sudoers_01-2026.sh
+./change_sudoers_05-2026.sh  
+
+# Troubleshooting  
+Falls dieser Error kommt: "bash: ./change_sudoers_01-2026.sh: /bin/bash^M: bad interpreter: No such file or directory"  
+aber die Syntax korrekt ist dann folgendes ausführen (Skript = auf windows geschrieben): sed -i 's/\r$//' change_sudoers_05-2026.sh  
